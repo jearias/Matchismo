@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		822B2FFD17C9095900A740E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 822B2FFC17C9095900A740E2 /* Foundation.framework */; };
-		822B2FFF17C9095900A740E2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 822B2FFE17C9095900A740E2 /* CoreGraphics.framework */; };
-		822B300117C9095900A740E2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 822B300017C9095900A740E2 /* UIKit.framework */; };
 		822B300717C9095900A740E2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 822B300517C9095900A740E2 /* InfoPlist.strings */; };
 		822B300917C9095900A740E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 822B300817C9095900A740E2 /* main.m */; };
 		822B300D17C9095900A740E2 /* CardGameAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 822B300C17C9095900A740E2 /* CardGameAppDelegate.m */; };
@@ -44,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8213B21417C91A760075E807 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Matchismo/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		822B2FF917C9095900A740E2 /* Matchismo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Matchismo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		822B2FFC17C9095900A740E2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		822B2FFE17C9095900A740E2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
@@ -80,9 +78,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				822B2FFF17C9095900A740E2 /* CoreGraphics.framework in Frameworks */,
-				822B300117C9095900A740E2 /* UIKit.framework in Frameworks */,
-				822B2FFD17C9095900A740E2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +97,7 @@
 		822B2FF017C9095900A740E2 = {
 			isa = PBXGroup;
 			children = (
+				8213B21317C91A760075E807 /* Main.storyboard */,
 				822B300217C9095900A740E2 /* Matchismo */,
 				822B302117C9095900A740E2 /* MatchismoTests */,
 				822B2FFB17C9095900A740E2 /* Frameworks */,
@@ -326,6 +322,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		8213B21317C91A760075E807 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8213B21417C91A760075E807 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		822B300517C9095900A740E2 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -436,6 +440,7 @@
 				INFOPLIST_FILE = "Matchismo/Matchismo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -455,6 +460,7 @@
 				INFOPLIST_FILE = "Matchismo/Matchismo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
